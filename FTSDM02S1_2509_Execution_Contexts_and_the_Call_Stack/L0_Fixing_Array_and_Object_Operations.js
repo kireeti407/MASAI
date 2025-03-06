@@ -2,7 +2,7 @@ const library = {
 
     books: [{ title: "The Hobbit", author: "J.R.R. Tolkien", year: 1937 }],
     
-    addBook(book) {
+    addBook:function(book) {
     
     if (!book.title || !book.author || !book.year) {
     
@@ -15,7 +15,7 @@ const library = {
     
     },
     
-    findBookByTitle(title) {
+    findBookByTitle:function(title) {
     let index= this.books.findIndex(book => book.title === title);
     if (index !==-1){
         console.log(this.books[index])
@@ -25,7 +25,7 @@ const library = {
     }
     },
     
-    removeBook(title) {
+    removeBook:function(title) {
     
     const index = this.books.findIndex(book => book.title === title);
     
