@@ -3,4 +3,4 @@ let student = {
     age: 22,
     course: "Computer Science"
   };
-console.log(JSON.stringify(student))  
+console.log(JSON.stringify(student))
