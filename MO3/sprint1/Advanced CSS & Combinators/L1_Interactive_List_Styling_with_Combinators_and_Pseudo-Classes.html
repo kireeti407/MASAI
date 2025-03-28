@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol>li:first-child{
+            font-weight: bold;
+        }
+        ol>li:first-child+li{
+            background-color: yellow;
+        }
+        ol>li:nth-child(2)~li{
+            font-style: italic;
+        }
+        ol>li:nth-child(1):hover{
+            color:red;
+        }
+        ol>li:nth-child(2):hover{
+            color:blue;
+        }
+        ol>li:nth-child(3):hover{
+            color:purple;
+        }
+        ol>li:nth-child(4):hover{
+            color:yellow;
+        }
+        ol>li:nth-child(5):hover{
+            color:green;
+        }
+        
+    </style>
+</head>
+<body>
+    <ol>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ol>
+
+</body>
+</html>
